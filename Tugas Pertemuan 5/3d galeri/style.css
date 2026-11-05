@@ -1,0 +1,27 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;                     
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .galeri img {
+      width: 100%;
+      max-width: 100%;                       /* Memastikan gambar tidak keluar kolom */
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
